@@ -1,5 +1,5 @@
 const sum = (a, b) => {
-    return a - b
+    return a + b
 }
 
 // console.log(sum(5, 4))
@@ -17,3 +17,5 @@ let expected = 100
 if(result !== expected){
     throw new Error(`${result} is not equal to ${expected}`)
 }
+
+module.exports = {sum, subtract}
