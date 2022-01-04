@@ -173,3 +173,16 @@ const newMediane = (x) => {
 
 console.log(newMediane([2, 4, 8]))
 console.log(newMediane([12, 6, 108, 9]))
+
+//Highest multiple adj
+
+const mult = (arr) => {
+    let p =arr[0] * arr[1]; 
+    for(i = 1; i < arr.length -1; i++){
+       const z = arr[i] * arr[i+1]
+      p = p > z ? p : z
+    }
+    return p;
+}
+
+console.log(mult([2, 4, 6, 10]))
